@@ -14,27 +14,27 @@ const ShowScreen = ({navigation}) => {
   );
 };
 
-ShowScreen.navigationOptions = ({ navigation }) => {
+ShowScreen.navigationOptions = ({navigation}) => {
   return {
     title: 'Blog',
-    headerRight: <TouchableOpacity onPress={() => navigation.push('EditBlog', {id:navigation.getParam('id')})}>
+    headerRight: <TouchableOpacity onPress={() => navigation.push('EditBlog', {id: navigation.getParam('id')})}>
       <EvilIcons style={{
         marginRight: 10,
       }} name='pencil' size={30} color='#000'/>
     </TouchableOpacity>,
-  }
+  };
 };
 
 const styles = StyleSheet.create({
-  content:{
-    padding:5,
-    margin:10,
+  content: {
+    padding: 5,
+    margin: 10,
   },
-  heading:{
-    fontSize:18,
+  heading: {
+    fontSize: 18,
     fontWeight: 'bold',
-    marginBottom:10
-  }
-})
+    marginBottom: 10,
+  },
+});
 
 export default ShowScreen;

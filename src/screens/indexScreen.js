@@ -30,6 +30,11 @@ const IndexScreen = ({navigation}) => {
 IndexScreen.navigationOptions = ({ navigation }) => {
  return {
    title: 'Home',
+   headerStyle: {
+     position: "absolute",
+     bottom: 0,
+   },
+
    headerRight: <TouchableOpacity onPress={() => navigation.push('AddBlog')}>
      <Feather style={{
        marginRight: 10,
