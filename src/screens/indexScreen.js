@@ -19,9 +19,6 @@ const IndexScreen = ({navigation}) => {
     }
   },[]);
 
-
-
-
   if (state.length === 0) {
     return <View><Text> No Blogs available!!!</Text></View>;
   }
