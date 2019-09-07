@@ -8,23 +8,21 @@ const IndexScreen = ({navigation}) => {
   const {state, deleteBlogPost, getBlogPosts} = useContext(Context);
 
   useEffect(() => {
-    getBlogPosts()
+    getBlogPosts();
 
     const listener = navigation.addListener('didFocus', ()=>{
       getBlogPosts()
-    })
+    });
 
     return () =>{
       listener.remove()
     }
   },[]);
 
-
-
-
   if (state.length === 0) {
     return <View><Text> No Blogs available!!!</Text></View>;
   }
+
   return <View>
     <FlatList
         data={state}
