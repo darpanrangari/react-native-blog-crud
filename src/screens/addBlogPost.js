@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext} from 'react';
 import {View, Text, TextInput, Button, StyleSheet, Alert} from 'react-native';
 import {Context} from '../context/BlogContext';
 import BlogPostForm from '../component/BlogPostForm';
