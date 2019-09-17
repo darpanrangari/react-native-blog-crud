@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "0.0.1",
   "private": true,
+  "description":"This ia blog app for both android and iOS built with React hooks",
   "scripts": {
     "start": "react-native start",
     "test": "jest",
