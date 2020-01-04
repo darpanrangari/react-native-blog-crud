@@ -20,7 +20,7 @@ const IndexScreen = ({navigation}) => {
   },[]);
 
   if (state.length === 0) {
-    return <View><Text> No Blogs avaisdfaslable!!! {state}</Text></View>;
+    return <View><Text> No Blogs available!!! {state}</Text></View>;
   }
 
   return <View>
